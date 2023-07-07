@@ -1,52 +1,24 @@
-# Prerequisites
-*.d
+// Імпортуєм модулі
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
 
-# Object files
-*.o
-*.ko
-*.obj
-*.elf
+// Створюєм функцію
+int main() 
+{
+    // Створюєм змінні
+    int x1, x2, y1, y2;
 
-# Linker output
-*.ilk
-*.map
-*.exp
+    // Вводим значення для змінних
+    printf("Write 4 numbers (x1, y1, x2, y2): ");
+    scanf("%d", &x1);
+    scanf("%d", &y1);
+    scanf("%d", &x2);
+    scanf("%d", &y2);
 
-# Precompiled Headers
-*.gch
-*.pch
+    int result = x2 - x1 + y2 - y1; // Формула для пошуку довжини вектора
 
-# Libraries
-*.lib
-*.a
-*.la
-*.lo
-
-# Shared objects (inc. Windows DLLs)
-*.dll
-*.so
-*.so.*
-*.dylib
-
-# Executables
-*.exe
-*.out
-*.app
-*.i*86
-*.x86_64
-*.hex
-
-# Debug files
-*.dSYM/
-*.su
-*.idb
-*.pdb
-
-# Kernel Module Compile Results
-*.mod*
-*.cmd
-.tmp_versions/
-modules.order
-Module.symvers
-Mkfile.old
-dkms.conf
+    printf("Result is: %f\n", sqrt(result)); // Виводим результат
+    system("pause"); // Для тих хто програмує на Sublime text
+    return 0;
+}
